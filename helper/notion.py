@@ -29,7 +29,7 @@ def query(notion_client: Client, filter: dict) -> dict:
     try:
         my_page = notion_client.databases.query(
             **{
-                "database_id": os.environ["DATABASE_ID_JAC"],
+                "database_id": os.environ["DATABASE_ID"],
                 "filter": {
                     "and": [
                         {

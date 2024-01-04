@@ -8,7 +8,7 @@ from datetime import datetime
 
 load_dotenv()
 
-notion = Client(auth=os.environ["NOTION_TOKEN_JAC"])
+notion = Client(auth=os.environ["NOTION_TOKEN"])
 
 emoji_map = {
     "Remind": "⏰",
